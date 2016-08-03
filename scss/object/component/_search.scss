@@ -1,0 +1,25 @@
+.c-search {
+  background-color: hsl(0, 0%, 80%);
+  padding: 1.5rem;
+  white-space: inherit;
+}
+
+.c-search__input {
+  font-size: 1.2rem;
+  height: 2.6rem;
+  padding: 0 1rem;
+  width: 20rem;
+}
+
+.c-search__submit {
+  background-color: hsl(349, 61%, 53%);
+  color: white;
+  cursor: pointer;
+  font-size: 0.8rem;
+  padding: 0 1rem;
+}
+
+.c-search__flex {
+  display: flex;
+}
+

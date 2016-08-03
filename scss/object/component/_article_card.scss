@@ -1,0 +1,40 @@
+$articleWidth: 31.5rem;
+
+.c-articleCardList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 66rem;
+}
+
+.c-articleCard {
+  box-shadow: 0.6rem 0.6rem 0.8rem -0.4rem hsla(0, 0%, 0%, 0.15);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+  width: $articleWidth;
+}
+
+.c-articleCard__image {
+  width: $articleWidth;
+}
+
+.c-articleCard__title {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.c-articleCard__text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c-articleCard__time {
+  align-self: flex-end;
+  background-color: hsl(76, 55%, 61%);
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  padding: 0.5rem 1rem;
+}

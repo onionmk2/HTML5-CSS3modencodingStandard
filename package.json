@@ -1,0 +1,21 @@
+{
+  "name": "standard-layout",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csscomb": "3.1.7",
+    "stylelint": "7.3.1",
+    "stylelint-config-standard": "13.0.2"
+  },
+  "devDependencies": {
+    "stylelint-config-standard": "^13.0.2",
+    "stylint": "^1.5.6"
+  }
+}

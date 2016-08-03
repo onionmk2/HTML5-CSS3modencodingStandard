@@ -1,0 +1,64 @@
+.mxauto {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@function str-replace($string, $search, $replace: '') {
+  $index: str-index($string, $search);
+
+  @if $index {
+    @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+  }
+  @return $string;
+}
+
+@mixin spacing($size, $unit) {
+  $margin: (type: 'm', prop: 'margin');
+  $padding: (type: 'p', prop: 'padding');
+
+  @each $item in $margin, $padding {
+    $type: map-get($item, type);
+    $prop: map-get($item, prop);
+
+    $size_using_d_as_dot: str-replace("#{$size}", '.', 'd');
+
+    .#{$type}t#{$size_using_d_as_dot}#{$unit} {
+      #{$prop}-top: #{$size}#{$unit};
+    }
+
+    .#{$type}r#{$size_using_d_as_dot}#{$unit} {
+      #{$prop}-right: #{$size}#{$unit};
+    }
+
+    .#{$type}b#{$size_using_d_as_dot}#{$unit} {
+      #{$prop}-bottom: #{$size}#{$unit};
+    }
+
+    .#{$type}l#{$size_using_d_as_dot}#{$unit} {
+      #{$prop}-left: #{$size}#{$unit};
+    }
+
+    .#{$type}x#{$size_using_d_as_dot}#{$unit} {
+      #{$prop}-right: #{$size}#{$unit};
+      #{$prop}-left: #{$size}#{$unit};
+    }
+
+    .#{$type}y#{$size_using_d_as_dot}#{$unit} {
+      #{$prop}-top: #{$size}#{$unit};
+      #{$prop}-bottom: #{$size}#{$unit};
+    }
+
+    .#{$type}a#{$size_using_d_as_dot}#{$unit} {
+      #{$prop}-top: #{$size}#{$unit};
+      #{$prop}-right: #{$size}#{$unit};
+      #{$prop}-bottom: #{$size}#{$unit};
+      #{$prop}-left: #{$size}#{$unit};
+    }
+  }
+}
+
+@for $i from 1 through 100 {
+  $number: $i / 10;
+
+  @include spacing($number, 'rem');
+}

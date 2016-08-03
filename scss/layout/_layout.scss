@@ -1,0 +1,31 @@
+$center-column-width: 97rem;
+
+.l_header {
+  background-image: url("../images/header.gif");
+  background-repeat: repeat-x;
+  box-shadow: 0 0 1rem 0.1rem hsl(0, 0%, 89%);
+  padding: 2.8rem 0 1rem;
+}
+
+.l_main {
+  display: flex;
+  margin: 0 auto 4rem;
+  padding-top: 3rem;
+  width: $center-column-width;
+}
+
+.l_main__content {
+  width: 66rem;
+}
+
+.l_main__menu {
+  margin-left: 4rem;
+  width: 27.5rem;
+}
+
+.l_footer {
+  background-image: url("../images/bg-footer.gif");
+  background-repeat: repeat;
+  margin-left: 4rem;
+  padding: 2rem 0 3rem;
+}

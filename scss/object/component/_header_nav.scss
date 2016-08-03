@@ -1,0 +1,28 @@
+.c-headerNav__list {
+  display: flex;
+  height: 3rem;
+  justify-content: center;
+}
+
+.c-headerNav__listItem {
+  align-items: center;
+  border-color: transparent;
+  border-radius: 0.8rem;
+  color: hsl(0, 0%, 40%);
+  display: flex;
+  font-size: 1.3rem;
+  height: 100%;
+  justify-content: center;
+  letter-spacing: 0.1rem;
+  padding: 0 1rem;
+  width: 10rem;
+}
+
+.c-headerNav__listItem--active,
+.c-headerNav__listItem:hover {
+  @extend .c-headerNav__listItem;
+
+  background-color: hsl(349, 61%, 52%);
+  color: hsl(0, 0%, 100%);
+  transition-duration: 0.15s;
+}

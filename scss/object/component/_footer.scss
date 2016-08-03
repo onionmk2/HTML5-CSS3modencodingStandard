@@ -1,0 +1,32 @@
+$footerLinkColor: hsl(0, 0%, 71%);
+
+.c-footer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.c-footer__links {
+  display: flex;
+  justify-content: flex-end;
+  width: 970px;
+}
+
+.c-footer__item {
+  padding: 0 1rem;
+}
+
+.c-footer__item + .c-footer__item {
+  border-left: dotted 0.1rem $footerLinkColor;
+}
+
+.c-footer__link {
+  border-bottom: dotted 0.1rem;
+  cursor: pointer;
+  color: $footerLinkColor;
+}
+
+.c-footer__copyright {
+  color: white;
+}
+

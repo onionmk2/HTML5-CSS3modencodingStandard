@@ -1,0 +1,12 @@
+.c-newsList__items {
+  max-height: 22rem;
+  overflow-y: auto;
+}
+
+.c-newsList__title {
+  background-image: url('../images/bg-slash.gif');
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  padding: 1rem 1.2rem;
+}

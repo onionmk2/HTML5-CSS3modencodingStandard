@@ -1,0 +1,33 @@
+$title-border-left-width: 0.5rem;
+$title-padding-left-width: 1rem;
+
+.c-documentsMenuItem__title {
+  border-left: $title-border-left-width solid hsl(349, 61%, 53%);
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding-left: $title-padding-left-width;
+}
+
+.c-documentsMenuItem__link {
+  display: flex;
+  padding-left: $title-border-left-width + $title-padding-left-width;
+}
+
+.c-documentsMenuItem__text {
+  display: block;
+  color: hsl(349, 61%, 53%);
+  flex-grow: 0;
+}
+
+.c-documentsMenuItem__caret {
+  width: 0;
+  height: 0;
+  content: '';
+  display: block;
+  border-top: 0.4rem solid transparent;
+  border-bottom: 0.4rem solid transparent;
+  border-left: 0.6rem solid hsl(215, 31%, 34%);
+  flex-grow: 0;
+}
+
+

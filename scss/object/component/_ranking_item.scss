@@ -1,0 +1,60 @@
+.c-rankingItem {
+  display: flex;
+  align-items: center;
+}
+
+.c-rankingItem__numberContainer {
+  border: 0.1rem solid transparent;
+  width: 1.8rem;
+  height: 1.8rem;
+  transform: rotate(45deg);
+
+  /*
+    https://drafts.csswg.org/css-flexbox/#flexibility
+    flex itemが持つ, main dimensionのavailable spaceに応じてリサイズする
+    性質を否定し、常に固定サイズの正方形になるようにする。
+  */
+  flex-shrink: 0;
+  flex-grow: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.c-rankingItem__numberContainer--first {
+  @extend .c-rankingItem__numberContainer;
+
+  background-color: hsl(49, 84%, 46%);
+  color: white;
+}
+
+.c-rankingItem__numberContainer--second {
+  @extend .c-rankingItem__numberContainer;
+
+  background-color: hsl(205, 9%, 47%);
+  color: white;
+}
+
+.c-rankingItem__numberContainer--third {
+  @extend .c-rankingItem__numberContainer;
+
+  background-color: hsl(26, 72%, 36%);
+  color: white;
+}
+
+.c-rankingItem__numberContainer--normal {
+  @extend .c-rankingItem__numberContainer;
+
+  color: hsl(0, 0%, 67%);
+  border: solid 0.1rem;
+}
+
+.c-rankingItem__numberContent {
+  transform: rotate(-45deg);
+}
+
+.c-rankingItem__text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+

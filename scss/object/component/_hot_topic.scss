@@ -1,0 +1,44 @@
+.c-hotTopic {
+  box-shadow: 0 0.6rem 0.4rem -0.4rem hsla(0, 0%, 0%, 0.15);
+  color: hsl(0, 0%, 20%);
+  display: flex;
+  text-decoration: none;
+  transition-duration: 0.15s;
+  transition-property: opacity;
+
+  &:hover {
+    opacity: 0.85;
+  }
+}
+
+.c-hotTopic__image {
+  width: 50%;
+}
+
+.c-hotTopic__content {
+  background-color: hsl(215, 30%, 25%);
+  width: 50%;
+}
+
+.c-hotTopic__date {
+  display: block;
+  background-color: white;
+  color: hsl(215, 30%, 25%);
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 0.4rem;
+  text-align: center;
+  width: 14rem;
+}
+
+.c-hotTopic__title {
+  color: white;
+  font-size: 2rem;
+  line-height: 1.6;
+}
+
+.c-hotTopic__text {
+  color: hsl(60, 20%, 83%);
+  line-height: 1.6;
+}

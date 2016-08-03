@@ -1,0 +1,31 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  // http://qiita.com/qtach1/items/2a48aa64dbcd820b7d76
+  color: hsl(0, 0%, 20%);
+  font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  font-size: 1.2rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  color: hsl(0, 0%, 20%);
+  text-decoration: none;
+}
+
+// http://stackoverflow.com/questions/2874813/why-textarea-and-textfield-not-taking-font-family-and-font-size-from-body
+// reset css にformまわりのリセットがないのでUAのスタイルが使われてしまう
+input,
+button {
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0;
+}
